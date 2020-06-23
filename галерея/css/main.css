@@ -1,0 +1,79 @@
+*{
+	margin: 0; /*внешние отступы*/
+	padding: 0; /*внутренние отступы*/
+	box-sizing: border-box; /*Применяется для изменения алгоритма расчёта ширины и высоты элемента. */
+}
+
+@font-face{
+	font-family: Roboto; /*названия шрифта для дальнейшего применения*/
+	src: url(../font/roboto-regular.ttf); /*путь к шрифту*/
+}
+
+
+body{
+	background-color: #efefef; /*цвет фона*/
+	font-family: Roboto; /*шрифт*/
+}
+
+main{
+	padding: 50px; /*//внутренние отступы*/
+	width: 70%; /*//ширина*/
+	background-color: #fff; /*//цвет main'а*/
+	margin: auto; /*//внешний отступ*/
+	display: flex; /*//показывает как должен находится блок на экране значение flex--заполняет доступное пространство*/
+	flex-wrap: wrap; /*/wrap--Расположение в несколько линий/*/
+	justify-content: center; /*/Определяет, как браузер распределяет пространство вокруг флекс-элементов вдоль главной оси контейнера/*/
+	box-shadow: 0 0 10px 3px rgba(0,0,0,0.2) /*/тени/*/
+}
+
+.photo{
+	width: calc(50% - 40px); /*это функция CSS, которая даёт возможность расчитать значения свойств CSS во время их определения. Она может быть использована везде, где применимы*/
+	height: calc((35vw - 40px) / 16*9); /*смотри выше*/
+	margin: 20px; /*внешние отступы*/
+	background-color: orange; /*цвет фона*/
+	background-position: center; /*расположние фона*/
+	background-size: cover; /*Масштабирует фоновое изображение согласно заданным размерам.*/
+	transition: all 0.5s ease;	/*за данное время должно произойти действие */
+}
+
+h1{
+	width: 100%; /*ширина*/
+	text-align: center; /*текст в центре*/
+	font-size: 48px; /*размер текста*/
+}
+
+.photo1{
+	background-image: url(../img/BMWM5.jpg); /*добавляем фото*/
+}
+
+.photo2{
+	background-image: url(../img/camri.jpg); /*смотреть выше*/
+}
+
+.photo3{
+	background-image: url(../img/Hyundai_Creta.jpg); /*смотреть выше*/ 
+}
+
+.photo4{
+	background-image: url(../img/lexusLX600.jpg); /*смотреть выше*/
+}
+
+.photo5{
+	background-image: url(../img/mazda6.jpg); /*смотреть выше*/
+}
+
+.photo6{
+	background-image: url(../img/passat.jpg); /*смотреть выше*/
+}
+
+.photo7{
+	background-image: url(../img/sportage.jpg); /*смотреть выше*/ 
+}
+
+.photo8{
+	background-image: url(../img/volvo_s60.jpg); /*смотреть выше*/
+}
+
+.photo:hover{
+	transform: rotate(3deg) scale(1.07); /*наведи по картинки на сайте*/
+}
